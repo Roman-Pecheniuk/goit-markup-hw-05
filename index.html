@@ -37,7 +37,7 @@
     <main>
         <section class="hero">
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </section>
         <section class="section features">
             <div class="container">
@@ -344,14 +344,15 @@
                 </div>      
             </div>               
         </footer>
-        <div class="backdrop tis-hidden">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-close-button" type="button">
+                <button class="modal-close-button" type="button" data-modal-close>
                     <svg class="close-svg">
-                        <use href="./images/icons/close-modal.svg"></use>
+                        <use href="./images/icons/sprite.svg#icon-close-modal"></use>
                     </svg>
                 </button>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
